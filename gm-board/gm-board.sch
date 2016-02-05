@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2155,7 +2155,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="U$1" library="dtb" deviceset="STM32F030F4" device=""/>
+<part name="U$1" library="dtb" deviceset="STM32F030F4" device="">
+<attribute name="FARNELL" value="2393635"/>
+</part>
 <part name="J1" library="dtb" deviceset="SWD_SHROUD" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M05X2" device="SHD"/>
 <part name="R2" library="passives-7351" deviceset="RESISTOR" device="0603-N"/>
@@ -2168,9 +2170,11 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
-<part name="C3" library="passives-7351" deviceset="CAPACITOR" device="0603-N"/>
-<part name="C4" library="passives-7351" deviceset="CAPACITOR" device="0603-N"/>
-<part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0603-N"/>
+<part name="C3" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="2u2">
+<attribute name="FARNELL" value="2496923"/>
+</part>
+<part name="C4" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
+<part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
 <part name="R5" library="passives-7351" deviceset="RESISTOR" device="0603-N"/>
 <part name="R6" library="passives-7351" deviceset="RESISTOR" device="0603-N"/>
 <part name="C7" library="passives-7351" deviceset="CAPACITOR" device="0603-N"/>
@@ -2184,13 +2188,21 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="R12" library="passives-7351" deviceset="RESISTOR" device="0603-N"/>
+<part name="R12" library="passives-7351" deviceset="RESISTOR" device="0603-N">
+<attribute name="FARNELL" value="2328089"/>
+</part>
 <part name="C11" library="passives-7351" deviceset="CAPACITOR" device="0603-N"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="SG2" library="buzzer" deviceset="F/CM12P" device=""/>
-<part name="R10" library="passives-7351" deviceset="RESISTOR" device="1206-N"/>
-<part name="R11" library="passives-7351" deviceset="RESISTOR" device="1206-N"/>
-<part name="IC1" library="dtb" deviceset="ZXCT1109" device=""/>
+<part name="SG2" library="buzzer" deviceset="F/CM12P" device="">
+<attribute name="FARNELL" value="1823866"/>
+</part>
+<part name="R10" library="passives-7351" deviceset="RESISTOR" device="1206-N" value="470k">
+<attribute name="FARNELL" value="1576201"/>
+</part>
+<part name="R11" library="passives-7351" deviceset="RESISTOR" device="1206-N" value="470k"/>
+<part name="IC1" library="dtb" deviceset="ZXCT1109" device="">
+<attribute name="FARNELL" value="1904028"/>
+</part>
 <part name="R16" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="4k7"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="R17" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="4k7"/>
@@ -2201,31 +2213,76 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J2" library="generator-lib" deviceset="HV_GEN" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="dtb" deviceset="JST_2MM_MALE_TH" device=""/>
-<part name="U$2" library="dtb" deviceset="MCP1700" device="TT"/>
-<part name="C10" library="passives-7351" deviceset="CAPACITOR" device="0805-N"/>
-<part name="C21" library="passives-7351" deviceset="CAPACITOR" device="0805-N"/>
-<part name="R4" library="passives-7351" deviceset="RESISTOR" device="1206-N"/>
-<part name="R7" library="passives-7351" deviceset="RESISTOR" device="1206-N"/>
-<part name="C6" library="passives-7351" deviceset="CAPACITOR" device="0805-N"/>
-<part name="C8" library="passives-7351" deviceset="CAPACITOR" device="0805-N"/>
-<part name="R13" library="passives-7351" deviceset="RESISTOR" device="1206-N"/>
-<part name="R18" library="passives-7351" deviceset="RESISTOR" device="1206-N"/>
-<part name="C22" library="passives-7351" deviceset="CAPACITOR" device="0805-N"/>
-<part name="C23" library="passives-7351" deviceset="CAPACITOR" device="0805-N"/>
-<part name="L6" library="passives-7351" deviceset="INDUCTOR" device="0603-N" value="BEAD"/>
+<part name="U$2" library="dtb" deviceset="MCP1700" device="TT">
+<attribute name="FANRELL" value="1296592"/>
+</part>
+<part name="C10" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="2.2p">
+<attribute name="FARNELL" value="1855767"/>
+</part>
+<part name="C21" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="2.2p">
+<attribute name="FARNELL" value="1855767"/>
+</part>
+<part name="R4" library="passives-7351" deviceset="RESISTOR" device="1206-N" value="470k">
+<attribute name="FARNELL" value="1576201"/>
+</part>
+<part name="R7" library="passives-7351" deviceset="RESISTOR" device="1206-N" value="470k">
+<attribute name="FARNELL" value="1576201"/>
+</part>
+<part name="C6" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="2.2p">
+<attribute name="FARNELL" value="1855767"/>
+</part>
+<part name="C8" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="2.2p">
+<attribute name="FARNELL" value="1855767"/>
+</part>
+<part name="R13" library="passives-7351" deviceset="RESISTOR" device="1206-N" value="470k">
+<attribute name="FARNELL" value="1576201"/>
+</part>
+<part name="R18" library="passives-7351" deviceset="RESISTOR" device="1206-N" value="470k">
+<attribute name="FARNELL" value="1576201"/>
+</part>
+<part name="C22" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="2.2p">
+<attribute name="FARNELL" value="1855767"/>
+</part>
+<part name="C23" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="2.2p">
+<attribute name="FARNELL" value="1855767"/>
+</part>
+<part name="L6" library="passives-7351" deviceset="INDUCTOR" device="0603-N" value="BEAD">
+<attribute name="FARNELL" value="1781093"/>
+</part>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="JP2" library="Mine" deviceset="M02" device="-HV"/>
-<part name="JP3" library="Mine" deviceset="M02" device="-HV"/>
-<part name="JP4" library="Mine" deviceset="M02" device="-HV"/>
+<part name="JP2" library="Mine" deviceset="M02" device="-HV">
+<attribute name="FARNELL" value="1462950"/>
+</part>
+<part name="JP3" library="Mine" deviceset="M02" device="-HV">
+<attribute name="FARNELL" value="1462950"/>
+</part>
+<part name="JP4" library="Mine" deviceset="M02" device="-HV">
+<attribute name="FARNELL" value="1462950"/>
+</part>
 <part name="R1" library="passives-7351" deviceset="RESISTOR" device="0603-N"/>
+<part name="C1" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="2u2">
+<attribute name="FARNELL" value="2496923"/>
+</part>
+<part name="C12" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="2u2">
+<attribute name="FARNELL" value="2496923"/>
+</part>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="165.1" y="12.7" size="1.778" layer="91">Vout = 4700 * 0.004 * V_sense</text>
+<text x="205.74" y="93.98" size="1.778" layer="91">other end: 2396204,1013097</text>
+<text x="109.22" y="40.64" size="1.778" layer="91">CHANGE FOOTPRINT</text>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="27.94" y="50.8"/>
+<instance part="U$1" gate="G$1" x="27.94" y="50.8">
+<attribute name="FARNELL" x="27.94" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="J1" gate="G$1" x="45.72" y="88.9"/>
 <instance part="JP1" gate="G$1" x="45.72" y="114.3" rot="R180"/>
 <instance part="R2" gate="G$1" x="109.22" y="81.28" rot="R90"/>
@@ -2238,7 +2295,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND5" gate="1" x="27.94" y="78.74"/>
 <instance part="+3V1" gate="G$1" x="27.94" y="96.52"/>
 <instance part="+3V2" gate="G$1" x="12.7" y="45.72"/>
-<instance part="C3" gate="G$1" x="12.7" y="30.48" rot="R180"/>
+<instance part="C3" gate="G$1" x="12.7" y="30.48" rot="R180">
+<attribute name="FARNELL" x="12.7" y="30.48" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="C4" gate="G$1" x="7.62" y="30.48" rot="R180"/>
 <instance part="C5" gate="G$1" x="2.54" y="30.48" rot="R180"/>
 <instance part="R5" gate="G$1" x="149.86" y="81.28" rot="R90"/>
@@ -2254,13 +2313,21 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="+3V6" gate="G$1" x="60.96" y="109.22" rot="R270"/>
 <instance part="GND11" gate="1" x="33.02" y="109.22" rot="R270"/>
 <instance part="+3V7" gate="G$1" x="147.32" y="50.8" rot="R90"/>
-<instance part="R12" gate="G$1" x="157.48" y="50.8" rot="R180"/>
+<instance part="R12" gate="G$1" x="157.48" y="50.8" rot="R180">
+<attribute name="FARNELL" x="157.48" y="50.8" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="C11" gate="G$1" x="175.26" y="45.72" rot="R180"/>
 <instance part="GND13" gate="1" x="175.26" y="40.64"/>
-<instance part="SG2" gate="G$1" x="114.3" y="33.02"/>
-<instance part="R10" gate="G$1" x="114.3" y="106.68" rot="R90"/>
+<instance part="SG2" gate="G$1" x="114.3" y="33.02">
+<attribute name="FARNELL" x="114.3" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R10" gate="G$1" x="114.3" y="106.68" rot="R90">
+<attribute name="FARNELL" x="114.3" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="R11" gate="G$1" x="116.84" y="106.68" rot="R90"/>
-<instance part="IC1" gate="G$1" x="160.02" y="27.94"/>
+<instance part="IC1" gate="G$1" x="160.02" y="27.94">
+<attribute name="FARNELL" x="160.02" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R16" gate="G$1" x="162.56" y="10.16" rot="R270"/>
 <instance part="GND10" gate="1" x="162.56" y="0"/>
 <instance part="R17" gate="G$1" x="162.56" y="45.72" rot="R270"/>
@@ -2271,23 +2338,64 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="J2" gate="G$1" x="215.9" y="40.64"/>
 <instance part="GND25" gate="1" x="236.22" y="30.48"/>
 <instance part="J3" gate="G$1" x="35.56" y="147.32" rot="R90"/>
-<instance part="U$2" gate="G$1" x="53.34" y="149.86"/>
-<instance part="C10" gate="G$1" x="127" y="106.68" rot="R180"/>
-<instance part="C21" gate="G$1" x="121.92" y="106.68" rot="R180"/>
-<instance part="R4" gate="G$1" x="149.86" y="106.68" rot="R90"/>
-<instance part="R7" gate="G$1" x="152.4" y="106.68" rot="R90"/>
-<instance part="C6" gate="G$1" x="162.56" y="106.68" rot="R180"/>
-<instance part="C8" gate="G$1" x="157.48" y="106.68" rot="R180"/>
-<instance part="R13" gate="G$1" x="187.96" y="106.68" rot="R90"/>
-<instance part="R18" gate="G$1" x="190.5" y="106.68" rot="R90"/>
-<instance part="C22" gate="G$1" x="200.66" y="106.68" rot="R180"/>
-<instance part="C23" gate="G$1" x="195.58" y="106.68" rot="R180"/>
-<instance part="L6" gate="G$1" x="182.88" y="50.8"/>
+<instance part="U$2" gate="G$1" x="53.34" y="149.86">
+<attribute name="FANRELL" x="53.34" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C10" gate="G$1" x="127" y="106.68" rot="R180">
+<attribute name="FARNELL" x="127" y="106.68" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C21" gate="G$1" x="121.92" y="106.68" rot="R180">
+<attribute name="FARNELL" x="121.92" y="106.68" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R4" gate="G$1" x="149.86" y="106.68" rot="R90">
+<attribute name="FARNELL" x="149.86" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="152.4" y="106.68" rot="R90">
+<attribute name="FARNELL" x="152.4" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="162.56" y="106.68" rot="R180">
+<attribute name="FARNELL" x="162.56" y="106.68" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="157.48" y="106.68" rot="R180">
+<attribute name="FARNELL" x="157.48" y="106.68" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R13" gate="G$1" x="187.96" y="106.68" rot="R90">
+<attribute name="FARNELL" x="187.96" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R18" gate="G$1" x="190.5" y="106.68" rot="R90">
+<attribute name="FARNELL" x="190.5" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C22" gate="G$1" x="200.66" y="106.68" rot="R180">
+<attribute name="FARNELL" x="200.66" y="106.68" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C23" gate="G$1" x="195.58" y="106.68" rot="R180">
+<attribute name="FARNELL" x="195.58" y="106.68" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="L6" gate="G$1" x="182.88" y="50.8">
+<attribute name="FARNELL" x="182.88" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND12" gate="1" x="121.92" y="30.48" rot="R90"/>
-<instance part="JP2" gate="G$1" x="198.12" y="93.98" rot="R180"/>
-<instance part="JP3" gate="G$1" x="160.02" y="93.98" rot="R180"/>
-<instance part="JP4" gate="G$1" x="119.38" y="93.98" rot="R180"/>
+<instance part="JP2" gate="G$1" x="198.12" y="93.98" rot="R180">
+<attribute name="FARNELL" x="198.12" y="93.98" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="JP3" gate="G$1" x="160.02" y="93.98" rot="R180">
+<attribute name="FARNELL" x="160.02" y="93.98" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="JP4" gate="G$1" x="119.38" y="93.98" rot="R180">
+<attribute name="FARNELL" x="119.38" y="93.98" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="R1" gate="G$1" x="104.14" y="45.72" rot="R90"/>
+<instance part="C1" gate="G$1" x="45.72" y="139.7" rot="R180">
+<attribute name="FARNELL" x="45.72" y="139.7" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C12" gate="G$1" x="63.5" y="139.7" rot="R180">
+<attribute name="FARNELL" x="63.5" y="139.7" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="GND14" gate="1" x="45.72" y="134.62"/>
+<instance part="GND15" gate="1" x="53.34" y="139.7"/>
+<instance part="GND16" gate="1" x="63.5" y="134.62"/>
+<instance part="+3V3" gate="G$1" x="66.04" y="149.86" rot="R270"/>
+<instance part="GND17" gate="1" x="40.64" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -2457,6 +2565,22 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="SG2" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="-"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -2478,11 +2602,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="114.3" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="121.92" x2="248.92" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="121.92" x2="248.92" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="35.56" x2="246.38" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="35.56" x2="246.38" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="121.92" x2="248.92" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="HV1"/>
-<wire x1="246.38" y1="38.1" x2="236.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="38.1" x2="236.22" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -2574,6 +2696,14 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="152.4" y="50.8"/>
 <pinref part="C19" gate="G$1" pin="2"/>
 <junction x="154.94" y="40.64"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="OUT"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="149.86" x2="63.5" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="149.86" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<junction x="63.5" y="149.86"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -2778,6 +2908,16 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="104.14" y1="30.48" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="P$1"/>
 <wire x1="104.14" y1="40.64" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="149.86" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="+"/>
+<wire x1="45.72" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="IN"/>
+<junction x="45.72" y="149.86"/>
 </segment>
 </net>
 </nets>

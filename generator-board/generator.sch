@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,17 +39,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tPadExt" color="7" fill="1" visible="yes" active="no"/>
-<layer number="54" name="bPadExt" color="1" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -10556,7 +10556,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
+<part name="C1" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n">
+<attribute name="FARNELL" value="2495332"/>
+</part>
 <part name="J1" library="dtb" deviceset="JST_2MM_MALE_TH" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -10564,7 +10566,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="FARNELL" value="9452460"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="C3" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="2.2u"/>
+<part name="C3" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="2.2u">
+<attribute name="FARNELL" value="2496923"/>
+</part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-7">
@@ -10600,37 +10604,37 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D11" library="diode" deviceset="1N4148" device="DO35-7">
 <attribute name="FARNELL" value="1625213"/>
 </part>
-<part name="C4" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C4" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C5" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C5" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C6" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C6" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C7" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C7" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C8" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C8" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C9" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C9" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C10" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C10" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C11" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C11" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C12" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C12" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C13" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C13" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C14" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C14" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -10652,16 +10656,18 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D12" library="diode" deviceset="1N4148" device="DO35-7">
 <attribute name="FARNELL" value="1625213"/>
 </part>
-<part name="C15" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C15" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
-<part name="C16" library="passives-7351" deviceset="CAPACITOR" device="1206-N">
+<part name="C16" library="passives-7351" deviceset="CAPACITOR" device="1206-N" value="100n">
 <attribute name="FARNELL" value="1855877"/>
 </part>
 <part name="D13" library="diode" deviceset="1N4148" device="DO35-7">
 <attribute name="FARNELL" value="1625213"/>
 </part>
-<part name="R9" library="rcl" deviceset="R-TRIMM" device="3103" value="47k"/>
+<part name="R9" library="rcl" deviceset="R-TRIMM" device="3103" value="47k">
+<attribute name="FARNELL" value="1771727"/>
+</part>
 <part name="TP1" library="Testpoint" deviceset="TP" device=""/>
 <part name="TP2" library="Testpoint" deviceset="TP" device=""/>
 <part name="TP3" library="Testpoint" deviceset="TP" device=""/>
@@ -10689,7 +10695,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND1" gate="1" x="78.74" y="43.18"/>
 <instance part="GND2" gate="1" x="43.18" y="35.56"/>
 <instance part="GND3" gate="1" x="38.1" y="35.56"/>
-<instance part="C1" gate="G$1" x="17.78" y="45.72"/>
+<instance part="C1" gate="G$1" x="17.78" y="45.72">
+<attribute name="FARNELL" x="17.78" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="J1" gate="G$1" x="-7.62" y="71.12" rot="R90"/>
 <instance part="GND4" gate="1" x="0" y="66.04"/>
 <instance part="GND5" gate="1" x="17.78" y="38.1"/>
@@ -10697,7 +10705,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="FARNELL" x="71.12" y="83.82" size="1.778" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="71.12" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C3" gate="G$1" x="45.72" y="73.66"/>
+<instance part="C3" gate="G$1" x="45.72" y="73.66">
+<attribute name="FARNELL" x="45.72" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND6" gate="1" x="45.72" y="66.04"/>
 <instance part="GND7" gate="1" x="71.12" y="73.66"/>
 <instance part="D1" gate="G$1" x="104.14" y="63.5" rot="R270">
@@ -10794,7 +10804,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="D13" gate="G$1" x="195.58" y="63.5" rot="R270">
 <attribute name="FARNELL" x="195.58" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R9" gate="G$1" x="68.58" y="22.86"/>
+<instance part="R9" gate="G$1" x="68.58" y="22.86">
+<attribute name="FARNELL" x="68.58" y="22.86" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="TP1" gate="G$1" x="195.58" y="43.18" smashed="yes" rot="R180"/>
 <instance part="TP2" gate="G$1" x="180.34" y="43.18" smashed="yes" rot="R180"/>
 <instance part="TP3" gate="G$1" x="165.1" y="43.18" smashed="yes" rot="R180"/>
