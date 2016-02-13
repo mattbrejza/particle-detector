@@ -3286,9 +3286,9 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <wire x1="-3.25" y1="5.5" x2="-1.5" y2="5.5" width="0" layer="51"/>
 <wire x1="0" y1="7" x2="-1.5" y2="5.5" width="0" layer="51" curve="-90"/>
 <pad name="GND_HV" x="23.25" y="0.875" drill="1" diameter="1.6764" shape="octagon"/>
-<pad name="HV1" x="39.75" y="1.5" drill="1" diameter="1.6764" shape="octagon"/>
-<pad name="HV2" x="44.5" y="1.5" drill="1" diameter="1.6764" shape="octagon"/>
-<pad name="HV3" x="49" y="1.5" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="HV1" x="38.8366" y="1.4986" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="HV2" x="43.9166" y="1.4986" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="HV3" x="48.9966" y="1.4986" drill="1" diameter="1.6764" shape="octagon"/>
 <pad name="GND_LV" x="2" y="2" drill="1.016" diameter="1.6764" shape="octagon"/>
 <pad name="SHDN" x="2" y="4.54" drill="1.016" diameter="1.6764" shape="octagon"/>
 <pad name="VIN" x="2" y="7.08" drill="1.016" diameter="1.6764" shape="octagon"/>
