@@ -1,0 +1,3 @@
+[submodule ".\\firmware-counter/libopencm3"]
+	path = .\\firmware-counter/libopencm3
+	url = https://github.com/libopencm3/libopencm3

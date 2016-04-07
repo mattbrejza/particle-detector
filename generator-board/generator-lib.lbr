@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -176,9 +176,9 @@
 <wire x1="-3.25" y1="5.5" x2="-1.5" y2="5.5" width="0" layer="51"/>
 <wire x1="0" y1="7" x2="-1.5" y2="5.5" width="0" layer="51" curve="-90"/>
 <pad name="GND_HV" x="23.25" y="0.875" drill="1" diameter="1.6764" shape="octagon"/>
-<pad name="HV1" x="39.75" y="1.5" drill="1" diameter="1.6764" shape="octagon"/>
-<pad name="HV2" x="44.5" y="1.5" drill="1" diameter="1.6764" shape="octagon"/>
-<pad name="HV3" x="49" y="1.5" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="HV1" x="38.8366" y="1.4986" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="HV2" x="43.9166" y="1.4986" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="HV3" x="48.9966" y="1.4986" drill="1" diameter="1.6764" shape="octagon"/>
 <pad name="GND_LV" x="2" y="2" drill="1.016" diameter="1.6764" shape="octagon"/>
 <pad name="SHDN" x="2" y="4.54" drill="1.016" diameter="1.6764" shape="octagon"/>
 <pad name="VIN" x="2" y="7.08" drill="1.016" diameter="1.6764" shape="octagon"/>
