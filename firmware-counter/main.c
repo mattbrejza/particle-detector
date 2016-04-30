@@ -69,29 +69,32 @@ void exti4_15_isr(void)
 			buff_out[0] = c1;
 			buff_out[1] = c2;
 			buff_out[2] = c3;
-			buff_out[3] = i1;
+			c1 = 0;
+			c2 = 0;
+			c3 = 0;
+			buff_out[3] = i1 | 0x2B610000;
 			shift_count = 0;
 		}
 
 
-		if (buff_out[0] & 0x8000000)
+		if (buff_out[0] & 0x80000000)
 			gpio_set(GPIOA, SPI_DAT);
 		else
 			gpio_clear(GPIOA, SPI_DAT);
 
 		buff_out[0] = buff_out[0] << 1;
-		if (buff_out[1] & 0x8000000)
-			buff_out[0] =+ 1;
+		if (buff_out[1] & 0x80000000)
+			buff_out[0] |= 1;
 		buff_out[1] = buff_out[1] << 1;
-		if (buff_out[2] & 0x8000000)
-			buff_out[1] =+ 1;
+		if (buff_out[2] & 0x80000000)
+			buff_out[1] |= 1;
 		buff_out[2] = buff_out[2] << 1;
-		if (buff_out[3] & 0x8000000)
-			buff_out[2] =+ 1;
+		if (buff_out[3] & 0x80000000)
+			buff_out[2] |= 1;
 		buff_out[3] = buff_out[3] << 1;
 
 		shift_count++;
-		if (shift_count > (32*4))
+		if (shift_count >= (32*4))
 			comm_timout = 0;
 		else
 			comm_timout = 500;
@@ -174,8 +177,7 @@ int main(void)
     exti_enable_request(EXTI1);
     exti_enable_request(EXTI6);
     exti_enable_request(EXTI7);
-    nvic_enable_irq(NVIC_EXTI4_15_IRQ);
-    nvic_enable_irq(NVIC_EXTI0_1_IRQ);
+
 
     //configure comms interface
     gpio_mode_setup(GPIOA, GPIO_MODE_INPUT, GPIO_PUPD_PULLDOWN, SPI_CLK);
@@ -184,11 +186,14 @@ int main(void)
     exti_set_trigger(EXTI9, EXTI_TRIGGER_RISING);
     exti_enable_request(EXTI9);
 
+    nvic_enable_irq(NVIC_EXTI4_15_IRQ);
+    nvic_enable_irq(NVIC_EXTI0_1_IRQ);
+
 	//adc
 	rcc_periph_clock_enable(RCC_ADC);
 	rcc_periph_clock_enable(RCC_GPIOA);
 	gpio_mode_setup(GPIOA, GPIO_MODE_ANALOG, GPIO_PUPD_NONE, GPIO3);
-	uint8_t channel[] = {3};
+	uint8_t channel[] = {ADC_CHANNEL_TEMP}; //3
 	adc_power_off(ADC1);
 	adc_calibrate_start(ADC1);
 	adc_calibrate_wait_finish(ADC1);
@@ -196,12 +201,14 @@ int main(void)
 	adc_set_operation_mode(ADC1, ADC_MODE_SCAN);
 //	adc_set_single_conversion_mode(ADC1);
 	adc_set_right_aligned(ADC1);
-	adc_set_sample_time_on_all_channels(ADC1, ADC_SMPTIME_239DOT5);
+	adc_set_sample_time_on_all_channels(ADC1, ADC_SMPTIME_013DOT5);
 	adc_set_regular_sequence(ADC1, 1, channel);
 	adc_set_resolution(ADC1, ADC_RESOLUTION_12BIT);
-	adc_set_single_conversion_mode(ADC1);
+//	adc_set_single_conversion_mode(ADC1);
 	adc_disable_analog_watchdog(ADC1);
 	adc_power_on(ADC1);
+	
+	adc_start_conversion_regular(ADC1);
 
     while(1)
     {
